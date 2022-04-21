@@ -15,7 +15,7 @@ subnet 172.15.100.0 netmask 255.255.252.0 {
 	max-lease-time 43200;
 }
 host r2 {
-	hardware ethernet 1e:63:04:0b:78:06;
+	hardware ethernet 00:aa:00:aa:00:aa;
 	fixed-address 172.15.103.254;
 }" > /etc/dhcp/dhcpd.conf
 apt-get update -y && echo 'n' | apt-get install -y isc-dhcp-server
